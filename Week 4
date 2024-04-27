@@ -1,0 +1,142 @@
+promineotech
+/**
+ * 
+ */
+package week4;
+
+/**
+ * 
+ */
+public class Week4 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Week 4 coding project 
+		
+		// Create an array of int called ages
+        int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
+        
+        //  Subtract the first element from the last element
+        int result = ages[ages.length - 1] - ages[0];
+        System.out.println("Result of subtraction: " + result);
+        
+        // Create a new array called ages2 with 9 elements
+        int[] ages2 = new int[9];
+        
+        // Check if ages2 has 9 elements
+        System.out.println("Length of ages2 array: " + ages2.length);
+        
+        //  subtraction
+        int resultB = ages2[ages2.length - 1] - ages2[0];
+        System.out.println("Result of subtraction (b): " + resultB);
+        
+        // Calculate the average age using a loop
+        int sum = 0;
+        for (int age: ages) {
+            sum += age;
+        }
+        double averageAge = (double) sum/ages.length;
+ 
+     // New array list
+        String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
+
+        // Calculate average number of letters per name
+        int totalLetters = 0;
+        for (String name : names) {
+            totalLetters += name.length();
+        }
+        double averageLettersPerName = (double) totalLetters / names.length;
+        System.out.println("Average number of letters per name: " + averageLettersPerName);
+
+        // Concatenate all names
+        StringBuilder concatenatedNames = new StringBuilder();
+        for (String name : names) {
+            concatenatedNames.append(name).append(" ");
+        }
+        System.out.println("Concatenated names: " + concatenatedNames.toString().trim());
+        
+        String[] newnames = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
+        int[] newnameLengths = new int[names.length];
+        
+        // Iterate over the names array and store the length of each name in newnameLengths array
+        for (int i = 0; i < names.length; i++) {
+            newnameLengths[i] = names[i].length();
+            
+         // Accessing the last element 3.
+            //int[] arr = {1, 2, 3, 4, 5};
+            //int lastElement = arr[arr.length - 1]; 
+            
+         // Accessing the first element 4.
+            //int[] arr = {1, 2, 3, 4, 5};
+            //int firstElement = arr[0]; 
+        }
+
+        // Step 6: Calculate the sum of all elements in the newnameLengths array
+       // int sum = 0;
+        //for (int length : newnameLengths) {
+          //  sum += length;
+        
+
+        // Print the sum
+        //System.out.println("Sum of all elements in newnameLengths array: " + sum);
+	 // Method to concatenate a word to itself n times
+
+    
+
+     // elements in an array of doubles
+    double calculateAverage(double[] numbers) {
+        if (numbers.length == 0) {
+            return 0.0;
+        }
+        double sum = 0;
+        for (double number : numbers) {
+            sum += number;
+        }
+        return sum / numbers.length;
+    
+
+    
+    (String[] args) {
+    	
+    }
+        // System prints
+        System.out.println(concatenateWord("Hello", 3)); // Output: HelloHelloHello
+        System.out.println(getFullName("John", "Doe")); // Output: John Doe
+        System.out.println(sumGreaterThan100(new int[]{30, 40, 50})); // Output: true
+        System.out.println(calculateAverage(new double[]{1.5, 2.5, 3.5})); // Output: 2.5
+        
+        
+     // Method to compare averages of two arrays of doubles
+       boolean compareAverages(double[] array1, double[] array2) {
+            double avg1 = calculateAverage(array1);
+            double avg2 = calculateAverage(array2);
+            return avg1 > avg2;
+        }
+
+        // determine if a person will buy a drink based on weather and money
+        boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
+            return isHotOutside && moneyInPocket > 10.50;
+        }
+
+        // calculate the average of elements in an array of doubles
+        double calculateAverage(double[] numbers) {
+            if (numbers.length == 0) {
+                return 0.0;
+            }
+            double sum = 0;
+            for (double number : numbers) {
+                sum += number;
+            }
+            return sum / numbers.length;
+        }
+
+        (String[] args) {
+            // Test cases
+            System.out.println(compareAverages(new double[]{1.5, 2.5, 3.5}, new double[]{2.0, 3.0, 4.0})); // Output: false
+            System.out.println(willBuyDrink(true, 15.0)); // Output: true
+            
+        }
+    
+    }
